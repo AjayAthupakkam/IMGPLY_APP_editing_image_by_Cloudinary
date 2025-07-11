@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="40" viewBox="0 0 180 40" fill="none">
+  <!-- Circle element -->
+  <circle cx="20" cy="20" r="16" fill="url(#gradient)"/>
+  
+  <!-- Text IMGPLY -->
+  <path d="M45 15H49V17H47V29H49V31H42V29H44V17H42V15H45Z" fill="#6D28D9"/>
+  <path d="M52 15H57L60 29H62L65 15H70V31H67V17H65L62 31H60L57 17H55V31H52V15Z" fill="#6D28D9"/>
+  <path d="M72 15H83V19H79V31H76V19H72V15Z" fill="#6D28D9"/>
+  <path d="M85 15H88V27H94V31H85V15Z" fill="#6D28D9"/>
+  <path d="M95 15H98V23L104 15H108L101 23L108 31H104L98 23V31H95V15Z" fill="#6D28D9"/>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="gradient" x1="4" y1="4" x2="36" y2="36" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#6366F1"/>
+    </linearGradient>
+  </defs>
+</svg>
