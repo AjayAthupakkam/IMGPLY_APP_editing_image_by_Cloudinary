@@ -2,6 +2,7 @@ import Header from '@/components/shared/Header'
 import TransformationForm from '@/components/shared/TransformationForm';
 import { transformationTypes } from '@/constants'
 import { redirect } from 'next/navigation';
+import type { SearchParamProps, TransformationTypeKey } from "@/types";
 
 const AddTransformationTypePage = async ({ params: { type } }: SearchParamProps) => {
   // Check if transformation type exists, redirect to home if not
