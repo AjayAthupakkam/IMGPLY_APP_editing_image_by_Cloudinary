@@ -35,6 +35,8 @@ export async function addImage({ image, path }: AddImageParams) {
 }
 
 // UPDATE IMAGE
+import type { UpdateImageParams } from "@/types";
+
 export async function updateImage({ image, path }: UpdateImageParams) {
   try {
     await connectToDatabase();
