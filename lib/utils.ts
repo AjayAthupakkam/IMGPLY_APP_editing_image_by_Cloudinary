@@ -60,7 +60,7 @@ export const formUrlQuery = ({
   searchParams,
   key,
   value,
-}: FormUrlQueryParams) => {
+}: import("@/types").FormUrlQueryParams) => {
   const params = { ...qs.parse(searchParams.toString()), [key]: value };
 
   return `${window.location.pathname}?${qs.stringify(params, {
@@ -69,13 +69,13 @@ export const formUrlQuery = ({
 };
 
 // REMOVE KEY FROM QUERY
-export function removeKeysFromQuery({
-  searchParams,
-  keysToRemove,
-}: RemoveUrlQueryParams) {
+import type { RemoveUrlQueryParams } from "@/types";
+
+export function removeKeysFromQuery(params: RemoveUrlQueryParams): string {
+  const { searchParams, keysToRemove } = params;
   const currentUrl = qs.parse(searchParams);
 
-  keysToRemove.forEach((key) => {
+  keysToRemove.forEach((key: string) => {
     delete currentUrl[key];
   });
 
