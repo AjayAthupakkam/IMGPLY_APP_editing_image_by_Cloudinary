@@ -134,10 +134,10 @@ const TransformationForm = ({ action, data = null, userId, type, config = null }
           const updatedImage = await updateImage({
             image: {
               ...imageData,
-              _id: data._id
+              _id: data?._id ?? ""
             },
             userId,
-            path: `/transformations/${data._id}`
+            path: `/transformations/${data?._id ?? ""}`
           })
 
           if(updatedImage) {
