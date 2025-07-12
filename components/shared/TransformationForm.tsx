@@ -94,21 +94,21 @@ const TransformationForm = ({ action, data = null, userId, type, config = null }
       });
 
       const imageData = {
-        title: values.title,
-        publicId: image?.publicId,
-        transformationType: type,
-        width: image?.width,
-        height: image?.height,
+        title: values.title || "",
+        publicId: image?.publicId || "",
+        transformationType: type || "",
+        width: image?.width ?? 0,
+        height: image?.height ?? 0,
         config: transformationConfig,
-        secureURL: image?.secureURL,
-        transformationURL: transformationUrl,
-        aspectRatio: values.aspectRatio,
-        prompt: values.prompt,
-        color: values.color,
-        fromObject: values.fromObject,
-        toObject: values.toObject,
-        itemsToExtract: values.itemsToExtract,
-        extractMode: values.extractMode,
+        secureURL: image?.secureURL || "",
+        transformationURL: transformationUrl || "",
+        aspectRatio: image?.aspectRatio || "",
+        prompt: values.prompt || "",
+        color: values.color || "",
+        fromObject: values.fromObject || "",
+        toObject: values.toObject || "",
+        itemsToExtract: values.itemsToExtract || "",
+        extractMode: values.extractMode || "",
       }
 
       if(action === 'Add') {
