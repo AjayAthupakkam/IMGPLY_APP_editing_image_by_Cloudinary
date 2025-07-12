@@ -16,6 +16,8 @@ const populateUser = (query: any) => query.populate({
 })
 
 // ADD IMAGE
+import type { AddImageParams } from "@/types";
+
 export async function addImage({ image, path }: AddImageParams) {
   try {
     await connectToDatabase();
