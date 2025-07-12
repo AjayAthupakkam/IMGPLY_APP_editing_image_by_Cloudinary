@@ -89,7 +89,7 @@ const TransformationForm = ({ action, data = null, userId, type, config = null }
       const transformationUrl = getCldImageUrl({
         width: image?.width,
         height: image?.height,
-        src: image?.publicId,
+        src: image?.publicId || "",
         ...transformationConfig
       });
 
