@@ -70,7 +70,7 @@ const TransformationForm = ({ action, data = null, userId, type, config = null }
 
     toObject: data?.toObject,
 
-    extractMode: data?.extractMode,
+
   } : {
     ...defaultValues,
   }
