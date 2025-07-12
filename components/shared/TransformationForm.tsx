@@ -48,6 +48,8 @@ export const formSchema = z.object({
 
 import type { TransformationFormProps } from "@/types";
 
+import type { Transformations } from "@/types";
+
 const TransformationForm = ({ action, data = null, userId, type, config = null }: TransformationFormProps) => {
   const validType = type as keyof typeof transformationTypes;
   const transformationType = transformationTypes[validType];
