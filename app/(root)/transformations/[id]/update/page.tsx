@@ -20,7 +20,7 @@ const Page = async ({ params: { id } }: SearchParamProps) => {
           action="Update"
           userId={authorId}
           type={image.transformationType}
-          creditBalance={image.creditFee || 0}
+
           config={image.config}
           data={image}
         />
