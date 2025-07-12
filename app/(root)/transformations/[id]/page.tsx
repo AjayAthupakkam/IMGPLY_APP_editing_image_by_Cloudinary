@@ -28,7 +28,7 @@ const ImageDetails = async ({ params: { id } }: SearchParamProps) => {
             <p className="hidden text-purple-300 md:block">|</p>
             <div className="p-14-medium md:p-16-medium flex gap-2 items-center">
               <p className="text-dark-600 font-medium">Prompt:</p>
-              <p className="text-gray-700 italic">"{image.prompt}"</p>
+              <p className="text-gray-700 italic">{image.prompt}</p>
             </div>
           </>
         )}
