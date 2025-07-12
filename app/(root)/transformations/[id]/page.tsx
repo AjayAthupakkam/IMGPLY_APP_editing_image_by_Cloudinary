@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { getImageById } from "@/lib/actions/image.actions";
 import { getImageSize } from "@/lib/utils";
 import { DeleteConfirmation } from "@/components/shared/DeleteConfirmation";
+import type { SearchParamProps } from "@/types";
 
 const ImageDetails = async ({ params: { id } }: SearchParamProps) => {
   const image = await getImageById(id);
