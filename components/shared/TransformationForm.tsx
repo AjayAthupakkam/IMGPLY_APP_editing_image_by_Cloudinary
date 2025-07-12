@@ -67,7 +67,7 @@ const TransformationForm = ({ action, data = null, userId, type, config = null }
     color: data?.color,
     prompt: data?.prompt,
     publicId: data?.publicId,
-    fromObject: data?.fromObject,
+
     toObject: data?.toObject,
     itemsToExtract: data?.itemsToExtract,
     extractMode: data?.extractMode,
