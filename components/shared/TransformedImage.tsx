@@ -6,6 +6,7 @@ import { PlaceholderValue } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 import React, { useState } from "react";
 
+import type { Transformations } from "@/types";
 // Define props type with all required properties
 interface CustomTransformedImageProps {
   image: any;

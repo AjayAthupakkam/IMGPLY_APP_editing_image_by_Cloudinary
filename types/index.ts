@@ -91,8 +91,11 @@ export type RemoveUrlQueryParams = {
   keysToRemove: string[];
 };
 
+import type { transformationTypes } from "@/constants";
+export type TransformationTypeParam = keyof typeof transformationTypes;
+
 export type SearchParamProps = {
-  params: { id: string; type: TransformationTypeKey };
+  params: { id?: string; type: TransformationTypeParam };
   searchParams: { [key: string]: string | string[] | undefined };
 };
 
