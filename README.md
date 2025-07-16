@@ -1,1 +1,1 @@
-https://imgply-edition.vercel.app/
+vercel:- https://imgply-edition.vercel.app/
